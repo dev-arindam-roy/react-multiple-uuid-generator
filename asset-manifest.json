@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-multiple-uuid-generator/static/css/main.804fac04.css",
+    "main.css": "/react-multiple-uuid-generator/static/css/main.0980ad84.css",
     "main.js": "/react-multiple-uuid-generator/static/js/main.4c02168f.js",
     "static/js/453.db4a58f2.chunk.js": "/react-multiple-uuid-generator/static/js/453.db4a58f2.chunk.js",
     "index.html": "/react-multiple-uuid-generator/index.html",
-    "main.804fac04.css.map": "/react-multiple-uuid-generator/static/css/main.804fac04.css.map",
+    "main.0980ad84.css.map": "/react-multiple-uuid-generator/static/css/main.0980ad84.css.map",
     "main.4c02168f.js.map": "/react-multiple-uuid-generator/static/js/main.4c02168f.js.map",
     "453.db4a58f2.chunk.js.map": "/react-multiple-uuid-generator/static/js/453.db4a58f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.804fac04.css",
+    "static/css/main.0980ad84.css",
     "static/js/main.4c02168f.js"
   ]
 }
