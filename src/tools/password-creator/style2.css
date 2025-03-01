@@ -1,0 +1,153 @@
+body {
+  background: #000000 !important;
+}
+h1.tool-title {
+  background: linear-gradient(
+    to right,
+    #9bf76d 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #bdf14d 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder !important;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.copied {
+  color: #00ffff;
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pwd-text {
+  color: #fff;
+  font-size: 30px;
+  font-family: monospace;
+}
+hr {
+  height: 4px;
+  border: none;
+  /* background: linear-gradient(90deg, #ff00ff, #ff4b2b, #00ffff, #ffff00); */
+  background: linear-gradient(90deg, #ff00ff, #07ff88, #00ffff, #f1f503);
+  background-size: 300% 100%;
+  animation: neonMove 3s linear infinite;
+  box-shadow: 0px 0px 15px rgba(255, 0, 255, 0.9),
+    0px 0px 20px rgba(255, 75, 43, 0.9), 0px 0px 25px rgba(0, 255, 255, 0.9);
+}
+
+@keyframes neonMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+button {
+  touch-action: manipulation;
+}
+
+/* Button 1: Generate - Vibrant Neon Pink & Orange */
+.glow-button-btn1 {
+  background: linear-gradient(90deg, #ff0080, #ff4b2b);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px rgba(255, 75, 43, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-button-btn1:hover {
+  background: linear-gradient(90deg, #ff4b2b, #ff0080);
+  box-shadow: 0px 0px 25px rgba(255, 75, 43, 1);
+  transform: scale(1.05);
+}
+
+.glow-button-btn1:active {
+  transform: scale(0.98);
+  box-shadow: 0px 0px 10px rgba(255, 75, 43, 0.6);
+}
+
+/* Button 2: Copy - Futuristic Cyan & Purple */
+.glow-button-btn2 {
+  background: linear-gradient(90deg, #00ffff, #8000ff);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-button-btn2:hover {
+  background: linear-gradient(90deg, #8000ff, #00ffff);
+  box-shadow: 0px 0px 25px rgba(0, 255, 255, 1);
+  transform: scale(1.05);
+}
+
+.glow-button-btn2:active {
+  transform: scale(0.98);
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.6);
+}
+
+.dev-name {
+  margin-top: 90px;
+  text-align: center;
+  background: linear-gradient(90deg, #ff4b2b, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}

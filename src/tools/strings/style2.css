@@ -1,0 +1,174 @@
+/* Apply full-page animated gradient */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Wrapper to ensure content layout stays intact */
+.animated-body-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffecd2, #fcb69f, #d4fc79, #96e6a1);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s infinite linear;
+  z-index: -1; /* Keeps background behind all content */
+}
+
+/* Keyframes for smooth gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ensure your main container/layout works properly */
+.container {
+  position: relative; /* Ensures content is above background */
+  z-index: 1;
+  padding: 20px;
+}
+
+h1.tool-title {
+  background: linear-gradient(
+    to right,
+    #fd03e0 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #bdf14d 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder !important;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-bg {
+  width: 100%;
+  height: auto;
+  /* background: linear-gradient(45deg, #ff416c, #ff4b2b, #1e90ff, #ff8c00); */
+  background: linear-gradient(45deg, #00c9ff, #92fe9d, #ff8c00, #ff416c);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+button[type="submit"] svg {
+  margin-top: -4px;
+}
+
+input[type="number"] {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: monospace;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+
+.token-item {
+  font-size: 24px;
+  font-family: monospace;
+  color: #000;
+  font-weight: 500;
+}
+
+.glow-button-btn1 {
+    background: linear-gradient(90deg, #00ff80, #00cc66); /* Greenish gradient */
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 255, 128, 0.8); /* Neon green glow */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .glow-button-btn1:hover {
+    background: linear-gradient(90deg, #00cc66, #00ff80); /* Reverse gradient on hover */
+    box-shadow: 0px 0px 25px rgba(0, 255, 128, 1);
+    transform: scale(1.05);
+  }
+  
+  .glow-button-btn1:active {
+    transform: scale(0.98);
+    box-shadow: 0px 0px 10px rgba(0, 255, 128, 0.6);
+  }
+  
+
+  .glow-button-btn2 {
+    background: linear-gradient(90deg, #ffdd00, #ff6b00); /* Warm neon tones */
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(255, 221, 0, 0.8); /* Soft golden glow */
+    position: relative;
+    overflow: hidden;
+}
+  
+.glow-button-btn2:hover {
+    background: linear-gradient(90deg, #ff6b00, #ffdd00); /* Reverse gradient */
+    box-shadow: 0px 0px 25px rgba(255, 221, 0, 1);
+    transform: scale(1.05);
+}
+  
+.glow-button-btn2:active {
+    transform: scale(0.98);
+    box-shadow: 0px 0px 10px rgba(255, 221, 0, 0.6);
+}
+
+.dev-name {
+  margin-top: 0px;
+  text-align: center;
+  background: linear-gradient(90deg, #ff4b2b, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
